@@ -1,0 +1,10 @@
+# Utilizamos una imagen base de phpMyAdmin
+FROM phpmyadmin/phpmyadmin:latest
+
+# Definimos las variables de entorno para la configuración de phpMyAdmin
+ENV PMA_HOST=mariadb
+ENV PMA_PORT=3306
+ENV PMA_USER=daniel
+ENV PMA_PASSWORD=laboratorio3
+
+EXPOSE 80
